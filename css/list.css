@@ -1,0 +1,125 @@
+/*清除浮动代码*/
+.clearfloat:after {
+    display:block;
+    clear:both;
+    content:"";
+    visibility:hidden;
+    height:0}
+.clearfloat {
+    zoom:1
+}
+.list-add-miaosha {
+    position: absolute;
+    left: 190px;
+    top: 42px;
+    border-left: 1px solid #c81523;
+    padding-left: 14px;
+}
+.navitems ul li {
+    font-size: 14px;
+    color: #666;
+    
+}
+.navitems ul li a {
+    padding: 0 23px;
+}
+.navitems ul li:nth-child(-n+3) {
+    font-size: 16px;
+    color: #000;
+    font-weight: 700;
+}
+.navitems ul li:nth-child(-n+3) a {
+    padding: 0 30px;
+}
+.navitems ul li:nth-child(3){
+    margin-right:20px;
+}
+.navitems ul li:last-child a::after {
+    content: '\e91e';
+    font-family: 'icomoon';
+}
+.list-bd {
+    margin: 25px 0;
+}
+.list-bd ul li {
+    float: left;
+    width: 291px;
+    height: 462px;
+    border: 1px solid transparent;
+    margin-right: 12px;
+    /* text-align: center; */
+    padding-top: 25px;
+    
+}
+.list-bd ul li:hover {
+    border: 1px solid #c81523;
+}
+.list-bd ul li:nth-child(4n)
+{
+    margin-right: 0;
+}
+.list-bd ul li a {
+    padding-left: 75px;
+}
+.content {
+    padding: 0 13px;
+}
+.list-text {
+    font-size: 14px;
+    color: #666;
+}
+.price-n {
+    font-size: 22px;
+    font-weight: 700;
+    color: #c81523;
+}
+.price-o {
+    font-size: 14px;
+    font-weight: 400;
+    color: #a4a4a4;
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+.list-bd ul li p {
+    margin: 15px 0 10px;
+}
+
+.list-bd ul li button {
+    height: 50px;
+    width: 100%;
+    background-color: #b1191a;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+/* 进度条 */
+.progress {
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 1px;
+}
+.progress >span {
+    
+    float: left;
+
+}
+.p-border,
+.p-content {
+    display: block;
+    height: 12px;
+    width: 132px;
+    border: 1px solid #e12228;
+    border-radius: 6px;
+    margin: 10px 5px 0;
+}
+.p-content {
+    border: 0px;
+    background-color: #e12228;
+    width: 87%;
+    height: 8px;
+    margin: 1px 0 0 1px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    /* margin-bottom: 1px; */
+}
